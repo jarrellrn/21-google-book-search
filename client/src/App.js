@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
-import Navbar from "./components/shared/Navbar/Navbar";
-import Header from "./components/shared/Header/Header";
-
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import "./App.css";
 import SavedPage from "./components/SavedPage/SavedPage";
 import HomePage from "./components/HomePage/HomePage";
