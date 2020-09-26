@@ -45,9 +45,13 @@ function SearchResults(props) {
             </div>
           </div>
           <div>
-            <button type="button">
-              <a href={props.books.link} target="_blank">
-                View Book
+            <button type="button" style={{ backgroundColor: "white" }}>
+              <a
+                href={props.books.link}
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                View
               </a>
             </button>
             <button
@@ -55,6 +59,7 @@ function SearchResults(props) {
                 saveBook();
                 alert();
               }}
+              style={{ backgroundColor: "white" }}
             >
               Save
             </button>

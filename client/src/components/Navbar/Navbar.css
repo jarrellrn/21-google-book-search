@@ -1,6 +1,5 @@
 #linkcontainer {
   display: flex;
-  /* border: 5px solid black; */
   align-items: center;
   justify-content: center;
 }
