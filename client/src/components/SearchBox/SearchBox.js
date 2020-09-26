@@ -26,17 +26,12 @@ function SearchBox() {
   ));
 
   return (
-    <div
-    // className="jumbotron
-    >
+    <div>
       <form>
-        <div
-        // className="form-group"
-        >
+        <div>
           <label>Search for a book</label>
           <input
             type="text"
-            // className="form-control"
             aria-describedby="emailHelp"
             onChange={(e) => setSearch(e.target.value)}
           />

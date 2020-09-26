@@ -40,9 +40,7 @@ function SavedPage() {
   };
 
   return (
-    <div
-    // className="jumbotron"
-    >
+    <div>
       {SavedBooks.map((books) => {
         return (
           <div>
@@ -51,28 +49,17 @@ function SavedPage() {
                 <h2 className="title">{books.title}</h2>
                 <h4 className="author">{books.authors}</h4>
                 <div className="container">
-                  <div
-                  // className="row"
-                  >
-                    <div
-                    // className="col-md-2"
-                    >
+                  <div>
+                    <div>
                       <img src={books.thumbnail} alt="" />
                     </div>
-                    <div
-                    // className="col-md-10"
-                    >
+                    <div>
                       <p>{books.description}</p>
                     </div>
                   </div>
                 </div>
-                <div
-                // className="buttons"
-                >
-                  <button
-                    // className="btn btn-primary m-4"
-                    type="button"
-                  >
+                <div>
+                  <button type="button">
                     <a
                       style={{ color: "white" }}
                       href={books.link}
@@ -82,7 +69,6 @@ function SavedPage() {
                     </a>
                   </button>
                   <button
-                    // className="btn btn-danger"
                     onClick={() => {
                       removeBook(books._id);
                       alert();

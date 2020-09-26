@@ -39,25 +39,16 @@ function SearchResults(props) {
           <h4 className="author">{props.books.authors}</h4>
           <div className="container">
             <div className="row">
-              <div
-              // className="col-md-2"
-              >
+              <div>
                 <img src={props.books.thumbnail} alt="" />
               </div>
-              <div
-              // className="col-md-10"
-              >
+              <div>
                 <p>{props.books.description}</p>
               </div>
             </div>
           </div>
-          <div
-          // className="buttons"
-          >
-            <button
-              // className="btn btn-primary m-4"
-              type="button"
-            >
+          <div>
+            <button type="button">
               <a
                 style={{ color: "white" }}
                 href={props.books.link}
@@ -67,7 +58,6 @@ function SearchResults(props) {
               </a>
             </button>
             <button
-              // className="btn btn-primary"
               onClick={() => {
                 saveBook();
                 alert();
