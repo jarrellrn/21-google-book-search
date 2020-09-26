@@ -17,20 +17,20 @@ app.use(express.json());
 // }
 
 // Connect to the Mongo DB
-// const url = process.env.ATLAS_URL;
-// mongoose.connect(url, {
-//   useUnifiedTopology: true,
-//   useNewUrlParser: true,
-//   useCreateIndex: true,
-// });
+const url = process.env.ATLAS_URL;
+mongoose.connect(url, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+});
 
-mongoose.connect(
-  "mongodb://localhost:27017/books",
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => {
-    console.log("successfully connected to database");
-  }
-);
+// mongoose.connect(
+//   "mongodb://localhost:27017/books",
+//   { useNewUrlParser: true, useUnifiedTopology: true },
+//   () => {
+//     console.log("successfully connected to database");
+//   }
+// );
 
 const connection = mongoose.connection;
 connection.once("open", () => {
