@@ -31,10 +31,10 @@ function SavedPage() {
   const alert = () => {
     Swal.fire({
       title: "Success",
-      text: "Your book was Removed!",
+      text: "Book Removed",
       icon: "success",
       confirmButtonText: "OK",
-      timer: 3000,
+      timer: 1000,
     });
   };
 
@@ -59,11 +59,7 @@ function SavedPage() {
                 </div>
                 <div>
                   <button type="button">
-                    <a
-                      style={{ color: "white" }}
-                      href={books.link}
-                      target="_blank"
-                    >
+                    <a href={books.link} target="_blank">
                       Buy Now
                     </a>
                   </button>
