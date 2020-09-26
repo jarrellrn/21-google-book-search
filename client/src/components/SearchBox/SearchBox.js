@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import googlebooks from "google-books-search";
-
+import "./SearchBox.css";
 import SearchResults from "../SearchResults/SearchResults";
 
 function SearchBox() {
@@ -28,9 +28,10 @@ function SearchBox() {
   return (
     <div>
       <form>
-        <div>
-          <label>Search for a book</label>
+        <div id="searchLabelContainer">
+          <label id="searchText">Search for a book</label>
           <input
+            id="inputContainer"
             type="text"
             aria-describedby="emailHelp"
             onChange={(e) => setSearch(e.target.value)}

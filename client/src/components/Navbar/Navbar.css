@@ -1,0 +1,14 @@
+#linkcontainer {
+  display: flex;
+  /* border: 5px solid black; */
+  align-items: center;
+  justify-content: center;
+}
+
+#link1,
+#link2 {
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
