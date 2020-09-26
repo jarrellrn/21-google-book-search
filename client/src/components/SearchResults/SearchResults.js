@@ -1,8 +1,6 @@
 import React from "react";
 import axios from "axios";
-
 import Swal from "sweetalert2";
-
 import "./SearchResults.css";
 
 function SearchResults(props) {
@@ -18,16 +16,15 @@ function SearchResults(props) {
         thumbnail: props.books.thumbnail,
       },
     });
-    console.log("book added");
   }
 
   const alert = () => {
     Swal.fire({
       title: "Success",
-      text: "Your book was saved!",
+      text: "Book Saved",
       icon: "success",
-      confirmButtonText: "OK",
-      timer: 3000,
+      confirmButtonText: "Continue",
+      timer: 1000,
     });
   };
 
@@ -39,7 +36,7 @@ function SearchResults(props) {
           <h4 className="author">{props.books.authors}</h4>
           <div className="container">
             <div className="row">
-              <div>
+              <div id="thumbnailDiv">
                 <img src={props.books.thumbnail} alt="" />
               </div>
               <div>
@@ -49,11 +46,7 @@ function SearchResults(props) {
           </div>
           <div>
             <button type="button">
-              <a
-                style={{ color: "white" }}
-                href={props.books.link}
-                target="_blank"
-              >
+              <a href={props.books.link} target="_blank">
                 View Book
               </a>
             </button>

@@ -21,3 +21,11 @@ button a:link {
   align-items: center;
   justify-content: flex-end;
 }
+
+.row {
+  display: flex;
+}
+
+#thumbnailDiv {
+  margin-right: 20px;
+}
