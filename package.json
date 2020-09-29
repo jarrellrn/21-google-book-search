@@ -1,7 +1,7 @@
 {
-  "name": "googlebookreact",
+  "name": "googlebooksearch",
   "version": "1.0.0",
-  "description": "created using react",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -25,13 +25,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arod1207/Google-Book-Search.git"
+    "url": "git+https://github.com/jarrellrn/21-google-book-search"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/arod1207/Google-Book-Search/issues"
+    "url": "https://github.com/jarrellrn/21-google-book-search/issues"
   },
-  "homepage": "https://github.com/arod1207/Google-Book-Search#readme"
+  "homepage": "https://github.com/jarrellrn/21-google-book-search#readme"
 }

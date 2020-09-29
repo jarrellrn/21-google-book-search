@@ -5,17 +5,15 @@ router.route("/").get((req, res) => {
   SavedBook.find()
     .then((books) => res.send(books))
     .catch((err) => {
-      res.status(400).json("Error: " + err);
+      res.status(400).json(err);
     });
 });
 
 router.route("/:id").delete((req, res) => {
   SavedBook.findByIdAndDelete(req.params.id)
-    .then(() => res.json("Book Removed"))
-    .catch((err) => res.status(400).json("Error: " + err));
+    .then(() => res.json("Book removed"))
+    .catch((err) => res.status(400).json(err));
 });
-
-// testing route //
 
 router.route("/add").post((req, res) => {
   const title = req.body.title;
@@ -34,8 +32,8 @@ router.route("/add").post((req, res) => {
 
   newBook
     .save()
-    .then(() => res.json("New Book Added!"))
-    .catch((err) => res.status(400).json("Error: " + err));
+    .then(() => res.json("Book succesfully added"))
+    .catch((err) => res.status(400).json(err));
 });
 
 module.exports = router;
