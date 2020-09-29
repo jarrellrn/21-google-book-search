@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import Swal from "sweetalert2";
 import "./SearchResults.css";
 
 function SearchResults(props) {
@@ -19,13 +18,7 @@ function SearchResults(props) {
   }
 
   const alert = () => {
-    Swal.fire({
-      title: "Success",
-      text: "Book Saved",
-      icon: "success",
-      confirmButtonText: "Continue",
-      timer: 1000,
-    });
+    alert("Book saved");
   };
 
   return (

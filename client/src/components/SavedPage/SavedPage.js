@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./SavedPage.css";
-import Swal from "sweetalert2";
 
 function SavedPage() {
   const [SavedBooks, setSavedBooks] = useState([]);
@@ -29,13 +28,7 @@ function SavedPage() {
   }
 
   const alert = () => {
-    Swal.fire({
-      title: "Success",
-      text: "Book Removed",
-      icon: "success",
-      confirmButtonText: "OK",
-      timer: 1000,
-    });
+    alert("book removed");
   };
 
   return (
